@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height:100%;
+    width:100%;
+    background-color: var(--DarkSlateGrey)
+}
+
+:root{
+    /* Primary */
+    --Tomato: hsl(4, 100%, 67%);
+
+    /* Neutral */
+    --DarkSlateGrey: hsl(234, 29%, 20%);
+    --CharcoalGrey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+
+@font-face{
+    font-family: Roboto-Bold;
+    src:url(./assets/fonts/Roboto-Bold.ttf)
+}
+
+@font-face{
+    font-family: Roboto-Regular;
+    src:url(./assets/fonts/Roboto-Regular.ttf)
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:500px;
+    width: 650px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--White);
+    color: var(--CharcoalGrey);
+    border-radius:20px ;
+    padding: 20px;
+}
+
+.left-container{
+    margin: 30px;
+    font-family: 'Roboto-Regular';
+}
+
+.left-container h1{
+    font-family: 'Roboto-Bold';
+    margin-bottom: 10px;
+}
+
+.left-container p{
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+
+.left-container ul li{
+    list-style-image: url(./assets/images/icon-list.svg);
+    /* padding-right: 10px; */
+    font-size: 12px;
+    padding-left: 2px;
+    margin-bottom: 10px;  
+}
+
+
+.right-container img{
+    height: 450px;
+    width: 300px;
+}
+
+#input-section{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#input-section label{
+    margin-bottom: 10px;
+    font-size: 10px;
+    color: var(--CharcoalGrey);
+    font-family: 'Roboto-Bold';
+}
+
+#input-section input{
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    border: 1px solid var(--Grey);
+}
+
+#input-section input:hover{
+    cursor: pointer;
+}
+
+.label{
+    display: flex;
+    justify-content: space-between;
+}
+
+#error-msg{
+    font-size: 10px;
+    color: var(--Tomato);
+    font-family: 'Roboto-Bold';
+    text-align: right;
+    display: none;
+}
+
+#input-section input:focus{
+    border: 1px solid var(--Grey);
+}
+
+.left-container button{
+    width: 100%;
+    padding: 15px;
+    background-color: var(--CharcoalGrey);
+    color: var(--White);
+    border-radius: 9px;
+    font-family: 'Roboto-Bold';
+    border: none;
+}
+
+.left-container button:hover{
+    cursor: pointer;
+    background-color: var(--Tomato);
+    color:var(--White)
+}
