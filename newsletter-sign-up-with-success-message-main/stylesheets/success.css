@@ -1,0 +1,50 @@
+.success-container{
+    height:320px;
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--White);
+    color: var(--CharcoalGrey);
+    border-radius:20px ;
+    padding: 30px;
+}
+
+.success-container h1{
+    font-family: 'Roboto-Bold';
+}
+
+.success-container p{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-family: 'Roboto-Regular';
+    font-size: 12px;
+}
+
+#email{
+    font-family: 'Roboto-Bold';
+}
+
+
+.success-container button{
+    width: 100%;
+    padding: 15px;
+    background-color: var(--CharcoalGrey);
+    color: var(--White);
+    border-radius: 9px;
+    font-family: 'Roboto-Bold';
+    border: none;
+}
+
+.success-container button {
+    cursor: pointer;
+    background-color: var(--CharcoalGrey);
+    color:var(--White)
+}
+
+.success-container button:hover {
+    cursor: pointer;
+    background-color: var(--Tomato);
+    color:var(--White)
+}
