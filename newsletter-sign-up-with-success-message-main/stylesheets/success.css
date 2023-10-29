@@ -22,12 +22,12 @@
     font-size: 12px;
 }
 
-#email{
+.email-success{
     font-family: 'Roboto-Bold';
 }
 
 
-.success-container button{
+#dismiss{
     width: 100%;
     padding: 15px;
     background-color: var(--CharcoalGrey);
@@ -37,13 +37,8 @@
     border: none;
 }
 
-.success-container button {
-    cursor: pointer;
-    background-color: var(--CharcoalGrey);
-    color:var(--White)
-}
 
-.success-container button:hover {
+#dismiss:hover {
     cursor: pointer;
     background-color: var(--Tomato);
     color:var(--White)
