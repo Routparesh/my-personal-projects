@@ -32,7 +32,7 @@
 
 
 .left-container ul li{
-    list-style-image: url(/assets/images/icon-list.svg);
+    list-style-image: url(/newsletter-sign-up-with-success-message-main/assets/images/icon-list.svg);
     /* padding-right: 10px; */
     font-size: 12px;
     padding-left: 2px;
@@ -100,3 +100,64 @@
     background-color: var(--Tomato);
     color:var(--White)
 }
+
+@media (max-width: 455px) {
+
+    body, html {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        position: fixed;
+    }
+
+    .container {
+      flex-direction: column;
+      height: 100vh;
+      padding: 40px;
+    }
+  
+    .left-container {
+      order: 2; 
+      padding: 10px 50px 20px 50px;
+      margin-left: 80px;
+      /* box-sizing: border-box;
+      position: relative; */
+    }
+
+    .left-container h1{
+        font-family: 'Roboto-Bold';
+    }
+
+    .left-container p{
+        font-size: 18px;
+    }
+
+    .left-container ul li{
+        list-style-image: url(/newsletter-sign-up-with-success-message-main/assets/images/icon-list.svg);
+
+        font-size: 20px;
+    }
+
+
+    .right-container {
+        order: 1; 
+        background-image: url(/newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-mobile.svg);
+        background-size: cover; 
+        width: 70%;
+        margin-left: 120px;
+        margin-right: 81px;
+        height: 500px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        
+    }
+
+    .right-container img {
+        height: 200px;   
+    }
+
+    #input-section{
+        margin-right: 40px;
+    }
+    
+}  

@@ -1,3 +1,4 @@
+/* The code is declaring and initializing variables using JavaScript's `var` keyword. */
 var btn = document.getElementById('subscribe');
 var emailSpan = document.getElementsByClassName("email-success");
 
@@ -7,6 +8,8 @@ var span = document.getElementById('error-msg')
 
 
 
+/* The code snippet is adding an event listener to the `btn` element, which is triggered when the
+button is clicked. */
 btn.addEventListener('click',function(){
     var emailInput = input.value;
     console.log(emailSpan)
