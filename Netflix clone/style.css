@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: black;  
+}
+
+.first-container{
+    height: 100%;
+    background-image: url(./assets/10001.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px 0 20px;
+}
+
+nav img{
+    height: 100px;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value to control opacity */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#btn-1{
+    padding: 10px;
+    color: #fff;
+    background-color: rgb(15, 17, 17);
+    margin: 20px;
+    border-radius: 7px;
+    border: 1px thin gray;
+}
+
+
+#btn-1 img{ 
+    height: 15px;
+}
+
+#btn-1 #language{
+    border: none;
+    color: #fff;
+    background-color: rgb(15, 17, 17);
+}
+
+#btn-2{
+    background-color: #c11119;
+    color: #fff;
+    padding: 10px;
+    width: 70px;
+    border-radius: 7px;
+    border: none;
+}
+
+.inside-first-Container{
+    margin-top: 150px;
+    text-align: center;
+    color: #fff;
+}
+
+.inside-first-Container h1{
+    font-weight: 900;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.inside-first-Container p{
+    font-weight: 400;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+.input-first-container{
+    transform: translateX(30%);
+    margin-top: 20px;
+}
+
+.input-first-container input{
+    padding: 18px;
+    width: 25%;
+    background-color: rgb(42, 51, 66);
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+}
+
+.input-first-container button{
+    background-color: #c11119;
+    color: #fff;
+    width: 180px;
+    border: none;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 9px;
+}
+
