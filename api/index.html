@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XMLHttpRequest</title>
+    <style>
+        body {
+            background-color: rgb(46, 40, 40);
+        }
+
+        .container {
+            height: 400px;
+            width: 250px;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: bisque;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+            border: none;
+            background-color: purple;
+            color: aliceblue;
+        }
+
+        img {
+            height: 100px;
+            width: 100px;
+            border-radius: 100px;
+        }
+
+        h1 {
+            margin-left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="" id="img-hitesh" alt="">
+        <h1></h1>
+        <p></p>
+        <button>Followers</button>
+    </div>
+    <script>
+        var img = document.querySelector("#img-hitesh");
+        var h1 = document.querySelector("h1");
+        var p = document.querySelector("p");
+        var button = document.querySelector("button");
+
+        var url = 'https://api.github.com/users/hiteshchoudhary';
+
+        let xhr = new XMLHttpRequest();
+        xhr.open('GET', url);
+
+        xhr.onreadystatechange = function () {
+            var data = JSON.parse(xhr.responseText);
+            console.log(data);
+            img.src = data.avatar_url;
+            h1.innerHTML = data.name;
+            p.innerHTML = data.bio;
+            button.innerHTML = `Followers: ${data.followers}`
+        }
+
+        xhr.send();
+    </script>
+</body>
+
+</html>
