@@ -10,7 +10,6 @@ button.addEventListener('click',function(){
         return response.json()
     })
     .then((data)=>{
-        console.log(data)
         span.innerHTML = `ADVICE # ${data.slip.id}`;
         p.innerHTML = `"${data.slip.advice}"`
     })
